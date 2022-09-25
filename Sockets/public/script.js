@@ -1,32 +1,5 @@
 let socket = io();
 
-// let boombtn = document.getElementByID('boom')
-// boombtn.onclick = function(){
-//     socket.emit('boom') //emitting event boom into socket
-// }
-
-// socket.on('whizz',function(){
-//     let div = document.createElement('div')
-//     div.innerText = 'whizz'
-//     document.body.appendChild(div)
-// })
-
-// let btnsend = document.getElementById('btnsend')
-// let inputmsg = document.getElementById('inputmsg')
-// let ulmsglist = document.getElementById('ulmsglist')
-
-// btnsend.onclick = function(){
-//     socket.emit('msgsend',{
-//         msg: inputmsg.value    //this is the data,w e get to server, alsong with emitted event
-//     })
-//     inputmsg.value
-// }
-
-// socket.on('msgrcv',(data)=>{
-//     let linewmsg = document.createElement('li')
-//     linewmsg.innerText = data.msg
-//     ulmsglist.appendChild(linewmsg)
-// })
 function generatecard(value){
     let text = `<div class="card" style="width: 18rem;"> <div class="card-body"> <h5 class="card-title">${value}</h5> </div> </div>`;
     return text;
