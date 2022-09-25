@@ -1,0 +1,10 @@
+ROOMS:  groups of sockets ( joining clients )
+    ex: groups in whatsapp
+io.to('room_name').emit(...)  //for that room only
+
+1) add login system for jquery ( include jquery cdn in index.html)
+io.emit //everyone
+socket.emit //only itself
+socket.broadcast.emit //everyone except itself
+io.to('username') //for that user only , but use socket.join(username) //so we associate that socket with that isername
+
